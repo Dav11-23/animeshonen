@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+header {
+    max-width: 1400px;
+    display: flex;
+    color: rgb(247, 246, 246);
+    min-height: 70vh;
+    background-color: black;
+}
+
+li{
+    list-style: none;
+    color: aqua;
+}
+
+
+a {
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+    padding: 0px;
+}
+
+a:link {
+    color: rgb(245, 248, 250);
+}
+
+a:visited {
+    color: rgb(245, 244, 240);
+}
+
+a:hover {
+    background-color: rgba(250, 246, 246, 0.63);
+    padding: 2px;
+}
+
+
+nav {
+    max-width: 1400px;
+    background: linear-gradient(black,white);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin-top: 2px;
+
+}
+
+main {
+    max-width: 1400px;
+    background-color: rgb(240, 234, 234);
+    margin: 50px;
+    display: flex;
+    color: rgb(158, 107, 40);
+
+}
+div{
+    max-width: 1400px;
+}
+
+section {
+    max-width: 1400px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(15, 15, 15);
+
+
+}
+
+article {
+    max-width: 1400px;
+    background-color: rgb(250, 248, 248);
+    color: rgb(14, 240, 164);
+    line-height: 1.75em;
+}
+
+h3 {
+    font-size: 25px;
+    border-bottom: 1px solid rgb(72, 72, 73);
+    margin-left: 10px;
+    color: rgba(11, 11, 12, 0.849);
+    margin-right: 5px;
+}
+
+p {
+    color: rgb(37, 123, 163);
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+h4 {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+h2{
+    text-align: center;
+    color: antiquewhite;
+    grid-column-start: span 3;
+}
+
+body {
+
+    background-color: rgb(243, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.grid{
+    display: grid;
+    background-color: rgb(5, 5, 5);
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto ;
+    max-width: 1400px;
+    margin: 50px;
+    
+}
+
+
+
+.grid__items{
+    background: linear-gradient(rgb(236, 231, 231),rgb(248, 244, 244));
+    border: 1px solid;
+    
+}
+
+.peliculas{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    border: 1px solid black;
+    margin:50px;
+}
+
+.peliculas__ova{
+    background-color: aqua;
+    border: 1px solid rgb(241, 12, 12);
+}
+
+@media (max-width:800px) {
+
+    nav {
+        /*propiedad necesaria para un futuro*/  
+        /*overflow-x: scroll;
+        scroll-behavior: smooth;*/
+        margin: 0;
+        min-height: 2vh;
+    }
+
+
+    section {
+        margin: 0;
+        margin-top: 4px;
+    }
+
+    main {
+        margin: 0;
+        margin-top: 4px;
+    }
+
+    a {
+        padding: 0;
+        margin: 1px;
+        font-size: small;
+    }
+
+    .grid{
+        margin: 0;
+        padding: 0;
+    }
+
+}
