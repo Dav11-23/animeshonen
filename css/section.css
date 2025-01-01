@@ -7,7 +7,7 @@ header {
     max-width: 1400px;
     display: flex;
     color: rgb(247, 246, 246);
-    min-height: 70vh;
+    min-height: 40vh;
     background-color: black;
 }
 
@@ -72,7 +72,6 @@ section {
 article {
     max-width: 1400px;
     background-color: rgb(250, 248, 248);
-    color: rgb(14, 240, 164);
     line-height: 1.75em;
 }
 
@@ -85,9 +84,10 @@ h3 {
 }
 
 p {
-    color: rgb(37, 123, 163);
-    font-size: 17px;
+
+    font-size: 1em;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 h4 {
@@ -142,9 +142,8 @@ body {
 @media (max-width:800px) {
 
     nav {
-        /*propiedad necesaria para un futuro*/  
-        /*overflow-x: scroll;
-        scroll-behavior: smooth;*/
+      /*propiedad necesaria para un futuro*/  
+      /*overflow-x: scroll;*/
         margin: 0;
         min-height: 2vh;
     }
